@@ -26,10 +26,10 @@ Fuel=st.sidebar.selectbox("Fuel", ["Benzine", "Diesel","LPG/CNG", "Electric"])
 age = st.sidebar.number_input("Age:",min_value=0)
 
 #Km
-km=st.sidebar.number_input("Km:",min_value=0)
+km=st.sidebar.number_input("Km:",min_value=0, step=1000)
 
 #hp_kW
-hp_kW=st.sidebar.number_input("HP:",min_value=0)
+hp_kW=st.sidebar.number_input("HP:",min_value=0, step=10)
 
 import pickle
 filename = 'autoscout_model'
